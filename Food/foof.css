@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*
+
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{width: 100%;
+  font-weight: 300;
+ color: #111;
+
+
+}
+
+.banner{
+width: 100%;
+position: relative;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url(Food.jpg);
+background-size: cover;
+
+}
+
+.banner .content{
+
+
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 
+{
+    font-size: 5em;
+    color: aliceblue;
+
+
+
+}
+.banner .content p{
+
+    font-size: 1em;
+    color: white;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0101;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition:0.5s;
+}
+.btn:hover{
+
+    letter-spacing: 7px;
+}
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+
+
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.05);
+}
+header .logo{
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color:#111
+}
+
+header .logo span{
+
+    color: #f80909;
+
+}
+
+header.sticky span:hover{
+    color: #3c1880;
+}
+header  .Navi{
+    position: relative;
+    display: flex;
+}
+
+header .Navi li{
+
+    list-style: none;
+    margin-left: 30px;
+
+}
+header .Navi li a{
+    text-decoration: none;
+    color: #fff;
+     font-weight: 300;
+}
+
+
+header.sticky  .Navi li a{
+    color: #111;
+}
+
+header.sticky  .Navi li a:hover{
+
+    color: #ff0101;
+}   
+
+section{
+    background: #f8f8ffd9;
+    padding: 34px;
+}
+.fileira{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.fileira .col01{
+    position: relative;
+    width: 48%;
+
+}
+
+
+.titulotexto{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300 ;
+
+}
+
+.titulotexto span{
+    color: red;
+    font-weight: 700;
+    font-size: 1.5em;
+
+}
+
+.fileira .col01 .imgboxe{
+
+    position:relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+.fileira .col01 .imgboxe img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+        align-items: center ;
+        flex-direction: column;
+
+}       
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+
+.menu .content .box{
+
+    width: 340px;
+    margin:20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px  35px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+.menu .content .box .imgboxe{
+position: relative;
+width: 100%;    
+height: 300px;
+
+}
+
+
+.menu .content .box .imgboxe img{
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text .menu .content .box .imgboxe {
+
+    padding: 15px  0  5px;
+}
+
+.text .menu .content .box .imgboxe h3{
+color: #111;
+    font-weight:400;
+}
+.dono .content{
+        display: flex;
+        justify-content: center ;
+        object-fit: cover;
+        flex-wrap:wrap;
+        flex-direction:row;
+        margin-top: 40px    ;
+    }
+    .dono .content .box{
+
+        width: 250px ;
+        margin: 15px;
+    }
+    .dono .content .box .imgboxe{
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .dono .content .box .imgboxe  img{
+
+
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .dono .content .box .imgboxe h3{
+        font-weight: 400;
+        color: #111;
+    }
+
+    .clientes{
+
+        background: url(2.jpg);
+        background-size: cover;
+    
+    }
+
+    .white .titulotexto,
+    .white p{
+color: #fff;
+
+    }
+
+.clientes .content
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+
+    .clientes .content .box{
+        width: 340px;
+        margin: 20px;
+        padding: 40px;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+flex-direction: column;       
+        background: #fff;
+    }
+
+    .clientes .content .box .imgboxe{
+        position: relative;
+        width:80px;
+        height: 80px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+
+
+    .clientes .content .box .imgboxe img{
+
+
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .clientes .content .box  .text{
+        text-align: center;
+    
+    }
+
+
+    .clientes .content .box  .text p{
+        color: #111;
+        font-style: italic;
+    }
