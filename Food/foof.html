@@ -12,11 +12,13 @@
 <body>
     <header>
         <a href="#Inicio" class="logo">Baiano food<span>.</span></a>
+
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="Navi">
             <li><a href="#banner">Inicio</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#contato">Contato </a></li>
+            <li><a href="#contato">Contato</a></li>
             <li><a href="#clientes">Feedback</a></li>
         </ul>
         
@@ -220,10 +222,10 @@
 
 
 
-<section class="Contato" id="Contato" style="position: relative; top: 78    px;">
+<section class="Contato" id="contato" style="position: relative; top: 78px;">
     <div class="title ">
         <h2 class="titulotexto"><span>C</span>ontato: </h2>
-<p style="text-align: center; font-size: larger;"> Aqui o controle de qualidade é aguçado, só gente boa confira os depoimentos
+<p style="text-align: center; font-size: larger;"> 
 </p>
 <div class="formacontato">
     <h3>Fale comigo nego!</h3>
@@ -243,12 +245,20 @@
 </div>
 </div>
 
+
+<div class="autor"><p>Cristian <a>Bernardino</a></p></div>
+
+</section>
+
     <script type="text/javascript">
     window.addEventListener('scroll', function(){
         const header = document.querySelector('header');
         header.classList.toggle("sticky", window.scrollY > 0);
                 });
-    
+       function toggleMenu(){
+           const menuToggle = document.querySelector('.menuToggle');
+           menuToggle.classList.toggle('active')
+       }
     </script>
 </body>
 </html>
